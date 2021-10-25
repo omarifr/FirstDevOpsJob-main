@@ -33,7 +33,7 @@ module "aforo-octubreof-cluster1" {
   source          = "terraform-aws-modules/eks/aws"
   cluster_name    = "aforo-octubreof-cluster1"
   cluster_version = "1.17"
-  subnets         = ["subnet-04dcf0ca77d4a2d65", "subnet-0eccb5833ec744e8a", "subnet-0006dd72a1b44f835", "subnet-0407bc6e985e069f5", "subnet-0a83787fb5d4ace2b", "subnet-0716a7a0c0e0fbe3b", "subnet-030d7656c3a96aa08", "subnet-06a308c0d44399837", "subnet-092feefc07fe0c3b2", "subnet-0cb9ba872925d13d4"]  #CHANGE # Donot choose subnet from us-east-1e
+  subnets         = ["subnet-0cb9ba872925d13d4", "subnet-092feefc07fe0c3b2"]  #CHANGE # Donot choose subnet from us-east-1e
   #subnets = data.aws_subnet_ids.subnets.ids
   vpc_id          = aws_default_vpc.default.id
   #vpc_id         = "vpc-1234556abcdef" 
